@@ -70,7 +70,6 @@ nav {
     background-image: url(img/heroman.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,8 +106,8 @@ nav {
     background-color: #355592;
     border-radius: 4px;
     border: none;
-    height: 2.5rem;
     width: 7rem;
+    height: 3rem;
     color: var(--text-color);
     font-size: 20px;
     font-weight: 800;
@@ -117,7 +116,7 @@ nav {
     border-radius: 4px;
     border: 2px solid white;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 2.5rem;
+    height: 3rem;
     width: 7rem;
     color: var(--text-color);
     font-size: 20px;
@@ -157,10 +156,9 @@ nav {
 
 /* section 2 */
 
-#classes {
+.classes {
     background:linear-gradient(45deg, #FFFFFF 50%, #F6F6F6 50%);
-    height: 100vh;
-    padding: 5rem 15% 2% 15%;
+    padding: 8rem 20% 2% 16%;
 }
 
 .button-container{
@@ -173,7 +171,6 @@ nav {
     text-align: center;
     color: var(--sc-txtcolor);
     font-weight: 800;
-    
 }
 
 .classes hr {
@@ -199,12 +196,10 @@ nav {
     height: 50px;
     margin-top: 2rem;
     border: none;
-    padding-bottom: 0;
 }
 
 .classes button:hover {
     background-color: #F39F15;
-    
 }
 
 #features-container {
@@ -218,7 +213,7 @@ nav {
     font-size: 1.5rem;
 }
 #features-container p {
-    font-weight: 800;
+    font-weight: 600;
     text-align: start;
     font-size: 1rem;
     padding-right: 9rem;
@@ -281,21 +276,21 @@ nav {
 @media screen and (max-width: 576px) {
     .menu-btn {
         display: none;
-      }
-      .menu-icon {
+    }
+    .menu-icon {
         display: block;
         font-size: 3rem;
         color: var(--text-color);
         cursor: pointer;
-      }
-      .bar {
+    }
+    .bar {
         position: absolute;
         transform: translateY(-400px);
-      }
-      nav {
+    }
+    nav {
         padding-right:5%;
     }
-      .menu-btn:checked ~ .bar {
+    .menu-btn:checked ~ .bar {
         display: grid;
         justify-content:end;
         top: 100%;
@@ -305,32 +300,34 @@ nav {
         box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
         transform: translateY(0);
         transition: 0.2s linear;
-      }
-      .menu-btn:checked ~ .bar a {
+    }
+    .menu-btn:checked ~ .bar a {
         font-size: 1rem;
         margin: 2rem 0;
-      }
-      .home {
-        height: 200vh;
+    }
+    .home {
+        display: block;
     }
     .sign {
         width: 100%;
-        display: flex;
-        padding-left: 1rem;
+        display: block;
     }
     .details {
         margin-left: 0;
         margin-top: 0.5rem;
-        display: flex;
-        padding-left: 1rem;
+        display: block;
         width: 100%;
     }
     .flex-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        width: 100%;
     }
 
+    .flex-container > div {
+        display: block;
+        width: 100%;
+    }
+    
     #classes {
         background:linear-gradient(90deg, #FFFFFF 50%, #F6F6F6 50%);
         height: 190vh;
@@ -372,5 +369,5 @@ nav {
         border-bottom: 30px solid #F39F15;
         left:9.4%;
         /* left:83.5%; */
-      }
+    }
 }
