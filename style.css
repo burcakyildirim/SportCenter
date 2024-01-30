@@ -7,6 +7,7 @@
 :root {
     --text-color: #F5F8F3;
     --sc-txtcolor: #365194;
+    --main-color: black;
 }
 
 body {
@@ -14,10 +15,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-section {
-    padding: 8rem 10% 2rem;
-}
+
 /* navbar*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,11 @@ nav {
 
 .menu-btn {
     display: none;
-  }
+}
+
+.menu-icon {
+    display: none;
+}
 
 .bar a {
     font-size: 1rem;
@@ -151,8 +155,130 @@ nav {
     font-weight: 800;
 }
 
+/* section 2 */
+
+#classes {
+    background:linear-gradient(45deg, #FFFFFF 50%, #F6F6F6 50%);
+    height: 100vh;
+    padding: 5rem 15% 2% 15%;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.classes h1 {
+    text-align: center;
+    color: var(--sc-txtcolor);
+    font-weight: 800;
+    
+}
+
+.classes hr {
+    width: 10%; 
+    margin-left: 45%;
+    border: 5px solid;
+    border-color: #F39F15;
+    border-radius: 50px;
+}
+
+.classes p {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.classes button{
+    background-color: var(--sc-txtcolor);
+    color: var(--text-color);
+    font-weight: 800;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    margin-top: 2rem;
+    border: none;
+    padding-bottom: 0;
+}
+
+.classes button:hover {
+    background-color: #F39F15;
+    
+}
+
+#features-container {
+    display: inline-flex;
+}
+
+#features-container h6 {
+    padding-top: 2rem;
+    font-weight: 800;
+    text-align: start;
+    font-size: 1.5rem;
+}
+#features-container p {
+    font-weight: 800;
+    text-align: start;
+    font-size: 1rem;
+    padding-right: 9rem;
+}
+
+#features-container img {
+    width: 30rem;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+/* Section 2 BMI */
+
+.bmi-container {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5rem;
+    padding: 5rem 15% 2% 15%;
+}
+
+.calculate-container h1 {
+    color: var(--sc-txtcolor);
+    font-weight: 800;
+}
+
+.calculate-container p{
+    padding-right: 9rem;
+    font-weight: 700;
+}
+
+.calculate-container input{
+    border-radius: 5px;
+}
+
+.calculate-container span{
+    padding-left: 0.3rem;
+}
+
+.img-container img {
+    height: 15rem;
+}
+
+.img-container {
+    text-align: center;
+    position: relative;
+}
+.triangle {
+    position:absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 0;
+    border-bottom: 30px solid #F39F15;
+    left:6%;
+    /* left:86.5%; */
+  }
+
 /* Responsive */
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 576px) {
     .menu-btn {
         display: none;
       }
@@ -185,9 +311,66 @@ nav {
         margin: 2rem 0;
       }
       .home {
-        height: 140vh;
+        height: 200vh;
     }
-    .flex-container > div {
-        height: 8rem;
+    .sign {
+        width: 100%;
+        display: flex;
+        padding-left: 1rem;
     }
+    .details {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        display: flex;
+        padding-left: 1rem;
+        width: 100%;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #classes {
+        background:linear-gradient(90deg, #FFFFFF 50%, #F6F6F6 50%);
+        height: 190vh;
+    }
+    .classes hr {
+        width: 28%; 
+        margin: 0 40% 0 38%;
+    }
+
+    #features-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #features-container p {
+        padding: 0rem;
+    }
+
+    .bmi-container {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calculate-container p{
+        padding-right: 0;
+    }
+    .img-container {
+        padding-top: 2rem;
+    }
+    .triangle {
+        position:absolute;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top: 0;
+        border-bottom: 30px solid #F39F15;
+        left:9.4%;
+        /* left:83.5%; */
+      }
 }
