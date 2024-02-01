@@ -1,6 +1,9 @@
 /* Ana Kısım */
 * {
     box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
     scroll-behavior: smooth;
 }
 
@@ -14,8 +17,6 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-
 /* navbar*/
 
 nav {
@@ -31,22 +32,12 @@ nav {
     background-color: transparent;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
     height: 4rem;
-    margin-right: 10px;
     width: 11rem;
 }
 
-.menu-btn {
-    display: none;
-}
-
-.menu-icon {
+.menu-btn, .menu-icon {
     display: none;
 }
 
@@ -65,34 +56,36 @@ nav {
     height: 26px;
 }
 /* Yazıların olduğu orta kısım */
-
-.home {
+#home {
     background-image: url(img/heroman.jpg);
     background-size: cover;
     background-position: center;
+}
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--text-color);
-    padding: 8rem 20% 2% 16%;
+    padding: 12rem 20% 2% 16%;
 }
 
 .power {
     background-color: #325494;
     border-radius: 4px;
     border: none;
-    height: 26px;
+    height: 40px;
     color: var(--text-color);
-    width: 7rem;
+    width: 10rem;
     text-shadow: 2px 2px 4px #000000;
     font-weight: bolder;
     text-align: center;
     padding-top: 0.2rem;
+    font-size: 1.5rem;
 }
 
 .container h1 {
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 80px;
+    font-weight: 00;
 }
 
 .container > p {
@@ -157,23 +150,34 @@ nav {
 /* section 2 */
 
 .classes {
-    background:linear-gradient(45deg, #FFFFFF 50%, #F6F6F6 50%);
-    padding: 8rem 20% 2% 16%;
+    position: relative;
 }
 
-.button-container{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.class-container {
+    padding-bottom: 5%;
+    width: 60%;
+    margin: auto;
 }
 
-.classes h1 {
+.bg-shape {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 60%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
+    background: #F6F6F6;
+}
+
+.class-container h2 {
+    padding-top: 2rem;
     text-align: center;
     color: var(--sc-txtcolor);
-    font-weight: 800;
+    font-weight: 700;
 }
 
-.classes hr {
+.class-container hr {
+    align-items: center;
     width: 10%; 
     margin-left: 45%;
     border: 5px solid;
@@ -187,7 +191,14 @@ nav {
     font-weight: 700;
 }
 
-.classes button{
+.button-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:10%;
+}
+
+.button-container button{
     background-color: var(--sc-txtcolor);
     color: var(--text-color);
     font-weight: 800;
@@ -203,7 +214,10 @@ nav {
 }
 
 #features-container {
-    display: inline-flex;
+    padding-top: 1.5rem;
+    display: flex;
+    gap:10%;
+    align-items: center;
 }
 
 #features-container h6 {
@@ -215,38 +229,39 @@ nav {
 #features-container p {
     font-weight: 600;
     text-align: start;
-    font-size: 1rem;
-    padding-right: 9rem;
+    margin-top: 1.5rem;
 }
 
 #features-container img {
-    width: 30rem;
-    height: 20rem;
-    padding-top: 2rem;
+    width: 50%;
 }
 
 /* Section 2 BMI */
 
 .bmi-container {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1.5rem;
-    padding: 5rem 15% 2% 15%;
+    display: flex;
+    width: 75%;
+    margin: auto;
+    gap: 10%;
 }
 
+.calculate-container {
+    width: 50%;
+    margin: auto;
+}
 .calculate-container h1 {
     color: var(--sc-txtcolor);
     font-weight: 800;
 }
 
 .calculate-container p{
-    padding-right: 9rem;
     font-weight: 700;
+    text-align: start;
 }
 
 .calculate-container input{
     border-radius: 5px;
+    border: 2px solid black;
 }
 
 .calculate-container span{
@@ -254,7 +269,7 @@ nav {
 }
 
 .img-container img {
-    height: 15rem;
+    width: 100%;
 }
 
 .img-container {
@@ -269,7 +284,6 @@ nav {
     border-top: 0;
     border-bottom: 30px solid #F39F15;
     left:6%;
-    /* left:86.5%; */
   }
 
 /* Responsive */
@@ -306,7 +320,7 @@ nav {
         margin: 2rem 0;
     }
     .home {
-        display: block;
+        padding: 9rem 0% 9% 0%;
     }
     .sign {
         width: 100%;
@@ -327,47 +341,37 @@ nav {
         display: block;
         width: 100%;
     }
-    
-    #classes {
-        background:linear-gradient(90deg, #FFFFFF 50%, #F6F6F6 50%);
-        height: 190vh;
-    }
-    .classes hr {
-        width: 28%; 
-        margin: 0 40% 0 38%;
+
+    .class-container {
+        display: block;
+        width: 90%;
     }
 
     #features-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    #features-container p {
-        padding: 0rem;
+        display: block;
+        width: 100%;
     }
 
+    #features-container img {
+        display: block;
+        width: 100%;
+    }
+    
     .bmi-container {
-        padding-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        width: 100%;
     }
 
-    .calculate-container p{
-        padding-right: 0;
+    .calculate-container {
+        width: 90%;
     }
     .img-container {
+        display: block;
+        width: 100%;
         padding-top: 2rem;
     }
-    .triangle {
-        position:absolute;
-        width: 0;
-        height: 0;
-        border: 15px solid transparent;
-        border-top: 0;
-        border-bottom: 30px solid #F39F15;
-        left:9.4%;
-        /* left:83.5%; */
+    .img-container img  {
+        display: block;
+        width: 100%;
     }
 }

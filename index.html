@@ -14,7 +14,7 @@
     <title>Sport Center</title>
 </head>
 <body>
-    <div class ="section1">
+    <section id ="home">
         <nav>
             <div class = "logo">
                 <img src="img/logo.png" alt="band">
@@ -32,25 +32,26 @@
                 <button><a href = "#joinus"><p>JOIN US</p></a></button>
             </div>
         </nav>
-        <section class="home" id = "home">
+        <div class="home">
             <div class="container">
                 <h6 class = "power"><p>POWERFULL</p></h6>
-                <h1>Group<br>Practice<br>With Trainer</h1><br>
+                <h1>Group Practice<br>With Trainer</h1><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit aut iste. Velit porro rerum, unde modi ipsam exercitationem laudantium illum. Id, laborum? Totam, dicta nisi. Voluptates, vero id. Perferendis.</p>
-                    <button class = "sign">Sign Up</button>
-                    <button class = "details">Details</button>
+                <button class = "sign">Sign Up</button>
+                <button class = "details">Details</button>
             </div>
-        </section>
-        <section class="flex-container">
+        </div>
+        <div class="flex-container">
             <div><p>325<br><span>Course</span></p></div>
             <div><p>405<br><span>Work Out</span></p></div>
             <div><p>305<br><span>Working Hour</span></p></div>
             <div><p>705<br><span>Happy Client</span></p></div>
-        </section>
-    </div>
-    <div>
-        <section class="classes" id = "classes">
-            <h1>OUR CLASSES</h1>
+        </div>
+    </section>
+    <section class="classes" id = "classes">
+        <div class = "class-container">
+            <div class = "bg-shape"></div>
+            <h2>OUR CLASSES</h2>
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odit aut iste. Amet consectetur adipisicing elit</p>
             <div class="button-container">
@@ -66,30 +67,29 @@
                     pariatur ad harum non, molestias maiores molestiae sapiente perferendis veniam earum fugit ipsum
                     repellendus architecto ducimus explicabo reiciendis alias quasi culpa libero amet similique nisi!</p>
                     <h6>When comes Yoga Your Time?</h6>
-                    <p>Saturday-Sunday: 8:00am - 10:000am<br>
-                       Monday-Tuesday: 8:00am - 10:000am<br>
-                       Wednesday-Friday: 8:00am - 10:000am</p>
+                    <p>Saturday-Sunday: 8:00am - 10:000am</p>
+                    <p>Monday-Tuesday: 8:00am - 10:000am</p>
+                    <p>Wednesday-Friday: 8:00am - 10:000am</p>
                 </div>
                 <img src = "img/yoga.jpg">
             </div>
-        </section>
-        <section>
-            <div class ="bmi-container">
-                <div class = "calculate-container">
-                    <h1>BMI Calculator</h1>
-                    <p>A higher BMI increases the chance of developing long-term conditions, such as type 2 diabetes and heart disease.The BMI calculation is just one measure of health.<br><br>
-                        It cannot tell the difference between muscle and fat.
-                   For example, if you have a lot of muscle, you may be classed as overweight or obese despite having low body fat.This is why you may get a better idea of your overall health from measuring your waist.</p>
-                   <input id ="height" type = "text" placeholder= "Your Height"><span>cm</span>
-                   <input id = "weight" type = "text" placeholder = "Your Weight"><span>kg</span>
-                </div>
-                <div class = "img-container">
-                    <h4>Your BMI</h4>
-                    <img src = "img/bmi-index.jpg">
-                    <div class="triangle"></div>
-                </div>
+        </div>
+    </section>
+    <div class ="bmi-container">
+        <div class = "calculate-container">
+            <h1>BMI Calculator</h1>
+            <p>A higher BMI increases the chance of developing long-term conditions, such as type 2 diabetes and heart disease.The BMI calculation is just one measure of health.<br><br>
+            It cannot tell the difference between muscle and fat.
+            For example, if you have a lot of muscle, you may be classed as overweight or obese despite having low body fat.This is why you may get a better idea of your overall health from measuring your waist.</p>
+            <input id ="height" type = "text" placeholder= "Your Height"><span>cm</span>
+            <input id = "weight" type = "text" placeholder = "Your Weight"><span>kg</span>
+        </div>
+        <div class = "img-container">
+            <h4>Your BMI</h4>
+            <img src = "img/bmi-index.jpg">
+            <div class="triangle">
             </div>
-        </section>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
