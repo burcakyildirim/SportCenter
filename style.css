@@ -243,6 +243,7 @@ nav {
     width: 75%;
     margin: auto;
     gap: 10%;
+    padding-bottom: 2rem;
 }
 
 .calculate-container {
@@ -286,6 +287,129 @@ nav {
     left:6%;
   }
 
+  /* Section 3 Trainer */
+
+  .trainer-container {
+    background-color: #F1F8FF;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .trainer-container h2 {
+    text-align: center;
+    color: var(--sc-txtcolor);
+    font-weight: 700;
+  }
+
+  .trainer-container p {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+
+  .trainers-container {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    width: 65%;
+    margin: auto;
+  }
+
+  .trainers-container img {
+    width: 90%;
+    border: #F39F15 2px solid;
+    border-radius: 10px;
+    transition: 0.5s ease;
+  }
+
+  .trainer-portfolio {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+  }
+  .trainer-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    gap: 1.5rem;
+    transition: 0.5s ease;
+  }
+
+  .trainer-portfolio:hover img {
+    transform: translateY(-100%);
+  }
+ .trainer-portfolio:hover .trainer-layer {
+    transform: translateY(0%);
+  }
+
+  /* Section 3 Purchase */
+  .purchase-container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .purchase-container h2 {
+    text-align: center;
+    color: var(--sc-txtcolor);
+    font-weight: 700;
+  }
+
+  .purchase-container p {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+  }
+  .equipment-container {
+    padding-top: 2rem;
+    display: flex;
+    gap:1.5rem;
+    width: 70%;
+    margin: auto;
+  }
+
+  .equipment-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .equipment-card img {
+    width: 100%;
+  }
+  .card-layer {
+    text-align: center;
+    padding-bottom: 1%;
+}
+  .card-layer p > span{
+    text-decoration: line-through;
+  }
+  .card-layer p > i {
+    float: left;
+  }
+
+   /* Review Section 4*/
+  .review-container {
+    background-color: #F1F8FF;
+    padding-top: 3rem;
+  }
+
+  .review-container h2 {
+    text-align: center;
+    color: var(--sc-txtcolor);
+    font-weight: 700;
+  }
+
+  .review-container p {
+    text-align: center;
+    color: var(--main-color);
+    font-weight: 700;
+  }
 /* Responsive */
 @media screen and (max-width: 576px) {
     .menu-btn {
@@ -373,5 +497,32 @@ nav {
     .img-container img  {
         display: block;
         width: 100%;
+    }
+    .trainer-container {
+        display: block;
+        width: 100%;
+    }
+
+    .trainers-container {
+        display: block;
+        width: 60%;
+    }
+
+    .trainers-container img {
+        margin-bottom: 2rem;
+    }
+
+    .purchase-container {
+        display: block;
+        width: 100%;
+    }
+
+    .equipment-container {
+        display: block;
+        width: 80%;
+    }
+    
+    .equipment-card {
+        margin-bottom: 2rem;
     }
 }
