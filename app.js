@@ -89,4 +89,15 @@ weight.addEventListener("input",() => {
   if(percentage > 6 && percentage < 88) {
     tri.style.left = `${percentage}%`;
   }
-})
+});
+
+
+let bar = document.querySelector(".bar");
+let nav = document.querySelector(".navbar-container");
+document.addEventListener("scroll", () =>
+if(window.pageYOffset != 0 ) {
+    nav.classList.add(".nav-style");
+} else {
+    nav.classList.remove(".nav-style");
+});
+

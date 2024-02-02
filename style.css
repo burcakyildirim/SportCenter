@@ -32,6 +32,12 @@ nav {
     background-color: transparent;
 }
 
+.nav-style {
+  position: fixed;
+  background-color: var(--sc-txtcolor);
+  width: 100%;
+}
+
 .logo img {
     height: 4rem;
     width: 11rem;
@@ -331,20 +337,24 @@ nav {
   }
   .trainer-layer {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 4rem;
     transform: translateY(100%);
     gap: 1.5rem;
     transition: 0.5s ease;
+    background: radial-gradient(rgba(53, 85, 146, 1), var(--sc-txtcolor));
+    color: white;
   }
 
+  .trainer-layer p {
+    color:white;
+  }
   .trainer-portfolio:hover img {
-    transform: translateY(-100%);
+    transform: translateY(0%);
   }
  .trainer-portfolio:hover .trainer-layer {
     transform: translateY(0%);
@@ -440,27 +450,6 @@ nav {
     padding: 1rem;
   }
 
-  /* 
-    .comment {
-    position: relative;
-  }
-  .tri {
-    position: absolute;
-    clip-path: polygon(0 0, 100% 100%, 100% 0);
-    color: red;
-    z-index: -1;
-    width: 5%;
-    height: 6%;
-  }
-  .tri2 {
-    position: absolute;
-    clip-path: polygon(0 0, 0 100%, 100% 0);
-    color: red;
-    z-index: -1;
-    width: 5%;
-    height: 6%;
-  } */
-
  /* Section 4 Contact */
   .contact-container {
     padding-top: 3rem;
@@ -484,6 +473,7 @@ nav {
     margin: auto;
     gap :5rem;
     padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .input-container {
     display: flex;
@@ -496,6 +486,10 @@ nav {
     border-radius: 5px;
   }
 
+  .googleMap iframe {
+    width:150%;
+    height: 100%;
+  }
   /* Footer*/
   footer {
     background-color: var(--sc-txtcolor);
@@ -678,5 +672,10 @@ nav {
     .footer-container {
         display: flex;
         width: 90%;
+    }
+
+    .googleMap iframe {
+      padding-top: 2rem;
+      width: 100%;
     }
 }
