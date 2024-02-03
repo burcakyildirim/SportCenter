@@ -353,7 +353,7 @@ nav {
   background-color: #325494;
   width: 7rem;
   height: 10rem;
-  top: -3%;
+  top: -2.5%;
   left: 28%;
 }
 
@@ -472,7 +472,8 @@ nav {
   width:70%;
   margin: auto;
   gap :5rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .client-container p > span {
@@ -488,8 +489,33 @@ nav {
   width: 60px;
 }
 
-.comment p {
+.comment {
+  position: relative;
   background-color: rgba(53, 85, 146, 1);
+}
+
+.comment::after {
+  position: absolute;
+  content: "";
+  clip-path: polygon(100% 0, 1% 0, 100% 100%);
+  background-color: #788ec2a1;
+  width: 2rem;
+  height: 2rem;
+  top: 100%;
+  left: 0;
+}
+.comment::before {
+  position: absolute;
+  content: "";
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  background-color: #788ec2a1;
+  width: 2rem;
+  height: 2rem;
+  top: 100%;
+  right: 0;
+}
+
+.comment p {
   color: #ffff;
   font-weight: 500;
   padding: 1rem;
@@ -583,8 +609,8 @@ footer {
       position: absolute;
       transform: translateY(-400px);
   }
-  nav {
-      padding-right:5%;
+  .navbar-container {
+      padding:5%;
   }
   .menu-btn:checked ~ .bar {
       display: grid;
@@ -592,7 +618,7 @@ footer {
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: rgba(53, 85, 146, 0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
       transform: translateY(0);
       transition: 0.2s linear;
