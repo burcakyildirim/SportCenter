@@ -307,42 +307,78 @@ nav {
 .trainers-container {
   padding-top: 2rem;
   display: flex;
-  justify-content: space-between;
-  gap: 10%;
-  width: 65%;
-  margin: auto;
-}
-
-.trainers-container {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 10%;
-  width: 65%;
+  gap:5rem;
+  width: 60%;
   margin: auto;
 }
 
 .trainers-container img {
-  width: 90%;
+  width: 100%;
   border: #F39F15 2px solid;
   border-radius: 10px;
   transition: .5s ease;
   opacity: 1;
-  height: auto;
   backface-visibility: hidden;
+  position: relative;
+}
+
+.trainer-portfolio::after {
+  position: absolute;
+  clip-path: inset(0 95% 0 0);  
+  content: "";
+  background-color: #325494;
+  width: 10rem;
+  height: 7rem;
+  top: 30%;
+  transition: .5s ease;
+}
+
+
+.trainer-portfolio::before {
+  position: absolute;
+  content: "";
+  clip-path: inset(0 0 0 95%); 
+  background-color: #325494;
+  width: 10rem;
+  height: 7rem;
+  top: 30%;
+  right: 100%;
+  transition: .5s ease;
+}
+
+.stick{
+  position: absolute;
+  clip-path: inset(0 0 95% 0);  
+  content: "";
+  background-color: #325494;
+  width: 7rem;
+  height: 10rem;
+  top: -3%;
+  left: 28%;
+}
+
+.stick-bottom {
+  position: absolute;
+  clip-path: inset(0 0 95% 0);  
+  content: "";
+  background-color: #325494;
+  width: 7rem;
+  height: 10rem;
+  top: 100%;
+  left: 28%;
 }
 
 .trainer-portfolio {
   position: relative;
-  overflow: hidden;
-  display: flex;
 }
+
+
 .trainer-layer {
   position: absolute;
   transition: .5s ease;
   opacity: 0;
   top:80%;
-  left:45%;
+  left:50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
@@ -355,6 +391,14 @@ nav {
 
 .trainer-portfolio:hover .trainer-layer {
   opacity: 1;
+}
+
+.trainer-portfolio:hover::after {
+  height: 12rem;
+}
+
+.trainer-portfolio:hover::before {
+  height: 12rem;
 }
 
 .trainer-layer p {
@@ -618,12 +662,14 @@ footer {
   }
 
   .trainers-container {
-      display: block;
-      width: 60%;
+    display: block;
+    width: 60%;
   }
 
-  .trainers-container img {
-      margin-bottom: 2rem;
+  .trainer-portfolio {
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
   }
 
   .purchase-container {
