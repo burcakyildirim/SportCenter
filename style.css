@@ -461,11 +461,10 @@ width: 100%;
 }
 
 /* Section 4 Contact */
-.contact-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 
+.contact-container {
+  padding-top:1rem;
+}
 .contact-container h2 {
   text-align: center;
   color: var(--sc-txtcolor);
@@ -662,11 +661,6 @@ footer {
   }
   .review {
       margin-bottom: 4rem;
-  }
-
-  .contact-container {
-      display: block;
-      width: 100%;
   }
 
   .message-container {
