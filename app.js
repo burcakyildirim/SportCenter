@@ -90,3 +90,14 @@ weight.addEventListener("input",() => {
     tri.style.left = `${percentage}%`;
   }
 });
+
+function changeBg() {
+    let navbar = document.querySelector(".navbar-container");
+    let scrollValue = window.scrollY;
+    if(scrollValue < 700) {
+        navbar.classList.remove('bgColor');
+    } else {
+        navbar.classList.add('bgColor');
+    }
+}
+window.addEventListener('scroll',changeBg);
