@@ -31,6 +31,7 @@ nav {
   background-color: #325494;
   transition: all 1s;
   height: 72px;
+  padding: 3rem 20% 2% 16%;
 }
 
 .menu-btn, .menu-icon {
@@ -38,7 +39,7 @@ nav {
 }
 
 .bar a {
-  font-size: 1rem;
+  font-size: 20px;
   margin-right: 20px;
   color: var(--text-color);
   text-decoration: none;
@@ -49,7 +50,7 @@ nav {
   background-color: #F39F15;
   border-radius: 4px;
   border: none;
-  height: 26px;
+  height: 27px;
 }
 /* Yazıların olduğu orta kısım */
 #home {
@@ -62,7 +63,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: var(--text-color);
-  padding: 12rem 20% 2% 16%;
+  padding: 17rem 20% 2% 16%;
 }
 
 .power {
@@ -281,7 +282,7 @@ nav {
   border: 15px solid transparent;
   border-top: 0;
   border-bottom: 30px solid #F39F15;
-  left:6%;
+  left:6.2%;
 }
 
 /* Section 3 Trainer */
@@ -307,7 +308,7 @@ nav {
 .trainers-container {
   padding-top: 2rem;
   display: flex;
-  gap:5rem;
+  gap:10rem;
   width: 60%;
   margin: auto;
 }
@@ -354,7 +355,7 @@ nav {
   width: 7rem;
   height: 10rem;
   top: -2.5%;
-  left: 28%;
+  left: 33%;
 }
 
 .stick-bottom {
@@ -365,7 +366,7 @@ nav {
   width: 7rem;
   height: 10rem;
   top: 100%;
-  left: 28%;
+  left: 33%;
 }
 
 .trainer-portfolio {
@@ -541,7 +542,7 @@ nav {
   display: flex;
   width:60%;
   margin: auto;
-  gap :5rem;
+  gap :20rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -611,24 +612,26 @@ footer {
   }
   .navbar-container {
       padding:5%;
+      display: flex;
+      width: 95%;
   }
   .menu-btn:checked ~ .bar {
       display: grid;
       justify-content:end;
       top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      right: 2%;
+      width: 20%;
+      background-color: rgba(50, 84, 148, 0.8);
       box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2);
       transform: translateY(0);
       transition: 0.2s linear;
   }
   .menu-btn:checked ~ .bar a {
       font-size: 1rem;
-      margin: 2rem 0;
+      margin: 1rem 0;
   }
   .home {
-      padding: 9rem 0% 9% 0%;
+      padding: 12rem 0% 9% 0%;
   }
   .sign {
       width: 100%;
@@ -690,6 +693,13 @@ footer {
   .trainers-container {
     display: block;
     width: 60%;
+  }
+  .stick{
+    left: 35%;
+  }
+  
+  .stick-bottom {
+    left: 35%;
   }
 
   .trainer-portfolio {
