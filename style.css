@@ -50,7 +50,7 @@ nav {
   background-color: #F39F15;
   border-radius: 4px;
   border: none;
-  height: 27px;
+  height: 30px;
 }
 /* Yazıların olduğu orta kısım */
 #home {
@@ -63,7 +63,7 @@ nav {
   justify-content: center;
   align-items: center;
   color: var(--text-color);
-  padding: 17rem 20% 2% 16%;
+  padding: 17.1rem 20% 2% 16%;
 }
 
 .power {
@@ -289,8 +289,9 @@ nav {
 
 .trainer-container {
   background-color: #F1F8FF;
+  margin-top: 2rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .trainer-container h2 {
@@ -308,19 +309,20 @@ nav {
 .trainers-container {
   padding-top: 2rem;
   display: flex;
-  gap:10rem;
-  width: 60%;
+  gap:7rem;
+  width: 70%;
   margin: auto;
 }
 
 .trainers-container img {
-  width: 100%;
+  width: 17rem;
   border: #F39F15 2px solid;
   border-radius: 10px;
   transition: .5s ease;
   opacity: 1;
   backface-visibility: hidden;
   position: relative;
+  height: 20rem;
 }
 
 .trainer-portfolio::after {
@@ -355,7 +357,7 @@ nav {
   width: 7rem;
   height: 10rem;
   top: -2.5%;
-  left: 33%;
+  left: 32%;
 }
 
 .stick-bottom {
@@ -613,7 +615,7 @@ footer {
   .navbar-container {
       padding:5%;
       display: flex;
-      width: 95%;
+      width: 100%;
   }
   .menu-btn:checked ~ .bar {
       display: grid;
@@ -692,14 +694,14 @@ footer {
 
   .trainers-container {
     display: block;
-    width: 60%;
+    width: 50%;
   }
   .stick{
-    left: 35%;
+    left: 30%;
   }
   
   .stick-bottom {
-    left: 35%;
+    left: 30%;
   }
 
   .trainer-portfolio {

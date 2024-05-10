@@ -1,3 +1,8 @@
+import yoga from "img/yoga.jpg"
+import group from "img/group.webp"
+import solo from  "img/solo.jpg"
+import stret from "img/stret.webp"
+
 let btn = document.querySelector(".button-container");
 let features = document.querySelector("#features-container");
 
@@ -42,7 +47,7 @@ function yoga() {
   document.querySelectorAll(
     "#features-container p"
   )[3].innerHTML = `Wednesday-Friday: 8:00am - 10:000am`;
-  document.querySelector("#features-container img").src = "img/yoga.jpg";
+  document.querySelector("#features-container img").src = yoga;
 }
 
 function group() {
@@ -63,7 +68,7 @@ function group() {
   document.querySelectorAll(
     "#features-container p"
   )[3].innerHTML = `Wednesday-Friday: 8:00am - 10:000am`;
-  document.querySelector("#features-container img").src = "img/group.webp";
+  document.querySelector("#features-container img").src = group;
 }
 
 function solo() {
@@ -85,7 +90,7 @@ function solo() {
   document.querySelectorAll(
     "#features-container p"
   )[3].innerHTML = `Wednesday-Friday: 8:00am - 10:000am`;
-  document.querySelector("#features-container img").src = "img/solo.jpg";
+  document.querySelector("#features-container img").src = solo;
 }
 
 function stretch() {
@@ -107,7 +112,7 @@ function stretch() {
   document.querySelectorAll(
     "#features-container p"
   )[3].innerHTML = `Wednesday-Friday: 8:00am - 10:000am`;
-  document.querySelector("#features-container img").src = "img/stret.webp";
+  document.querySelector("#features-container img").src = stret;
 }
 
 let tri = document.querySelector(".triangle");
